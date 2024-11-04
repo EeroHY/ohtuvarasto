@@ -67,9 +67,10 @@ class TestVarasto(unittest.TestCase):
     def test_ottaminen_ei_voi_olla_saldoa_suurempi(self):
         self.varasto.ota_varastosta(100)    
         
-        self.assertAlmostEqual(self.varasto.saldo, 1)    
+        self.assertAlmostEqual(self.varasto.saldo, 0)    
 
     def test_print_toimii(self):
         vastaus = str(self.varasto)
 
         self.assertEqual(vastaus, "saldo = 0, vielä tilaa 10")
+
