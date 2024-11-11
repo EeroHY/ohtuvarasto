@@ -10,20 +10,15 @@ def mehu():
     mehua = Varasto(100.0)
     print("Luonnin jälkeen:")
     print(f"Mehuvarasto: {mehua}")
-
-    print("Mehu setterit:")
     print("Lisätään 50.7")
     mehua.lisaa_varastoon(50.7)
     print(f"Mehuvarasto: {mehua}")
     print("Otetaan 3.14")
     mehua.ota_varastosta(3.14)
     print(f"Mehuvarasto: {mehua}")
-
-    print(f"Mehuvarasto: {mehua}")
     mehua.lisaa_varastoon(-666.0)
     print(f"Mehuvarasto: {mehua}")
 
-    print(f"Mehuvarasto: {mehua}")
     saatiin = mehua.ota_varastosta(-32.9)
     print(f"saatiin {saatiin}")
     print(f"Mehuvarasto: {mehua}")
